@@ -32,6 +32,7 @@ class ProfileController extends Controller
         if ($request->password) {
             $user->password = Hash::make($request->password);
         }   
+        
         // Save the updated user data
         $user->save();
         
